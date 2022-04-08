@@ -1,0 +1,5 @@
+rm(list = ls())
+load('Rdata/icgc/pre/linchuangzuiquan_icgc.Rdata')
+write.csv(meta,file = 'export/icgc/pre/icgc_linchuangzuiquan.csv')
+load('Rdata/tcga/pre/clinicaldata_juzhenshuju.Rdata')
+write.csv(meta,file = 'export/tcga/pre/tcga_linchuangzuiquan.csv')
